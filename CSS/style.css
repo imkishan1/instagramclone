@@ -1,0 +1,542 @@
+:root{
+    --background:#fafafa;
+    --text:#262626;
+    --thintext:#8e8e8e;
+    --border:#8e8e8e67;
+    --follow:#0095F6;
+    --footer-text-color:#c7c7c7;
+    
+}
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    /* font-family: 'Work Sans', sans-serif; */
+    font-family: 'Inter', sans-serif;
+    /* font-family: 'Inter', sans-serif,Arial, Helvetica, sans-serif,-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; */
+    background-color: var(--background);
+}
+
+nav {
+    /* border:1px solid red; */
+    position:sticky;
+    -webkit-position: sticky;
+    top: 0;
+    z-index: 100000000;
+   /* padding-top: 4px; */
+    width: 100%;
+}
+
+.navbar {
+    margin: 0 auto;
+    display: flex;
+    /* border: 2px solid blue; */
+    width: 100%;
+    border-bottom: 0.5px solid var(--border);
+    background-color:#fff;
+    /* margin-top: 5px;    */
+    /* height: 30px; */
+}
+.navbar .logo img{
+    width: 100px;
+    height: auto;
+    margin: 0 auto;
+    /* border: 1px solid red; */
+}
+.navbar .searchbox {
+    /* border: 1px solid rebeccapurple; */
+    display: flex;
+    margin: 0 auto;
+    
+    justify-content: center;
+    align-items: center; 
+    margin-left: 290px; 
+    
+}
+.navbar .searchbox input {
+    background-color: var(--background);
+    outline: none;
+    border: 1px solid var(--border);
+    text-align: center;
+    border-radius: 2px;
+    color: var(--thintext);
+    font-weight:lighter;
+     
+}
+.navbar .searchbox i {
+    color: var(--thintext);
+    transform: translateX(70px);
+    font-size: 14px;
+}
+.navbar ul {
+  
+    display: flex;
+    float: right;    
+    list-style: none;
+    box-sizing: border-box;
+    margin: 0 auto;
+    margin-left: 280px; 
+    /* border: 1px solid green; */
+}
+
+.navbar ul li{
+   display: block;
+   /* float: right; */
+   text-decoration: none;
+   padding: 5px;
+   margin-right: 10px;
+}
+.navbar ul li i {
+    font-size: 25px;
+   
+   
+}
+.navbar ul li img{
+    width: 22px;
+    height: auto;
+    
+}
+.userprofiledp {
+    width: 35px;
+    height: 35px;
+    border-radius: 55%;
+}
+/* Background */
+.background {
+    padding-top: 25px;
+}
+
+/* Background */
+
+/* Stories section */
+.background .maindiv {
+    display: flex;
+    width: 100%;
+    margin-bottom: 15px;
+    /* border: 1px solid red;   */
+}
+
+.stories{
+    display: flex;
+    border: 0.5px solid var(--border);
+    width: 60%;
+    height: 110px;
+    border-radius: 3px;
+    margin: 5px;
+    padding: 10px;
+    overflow-x: hidden;
+    background-color: #fff;
+    clear: both;    
+   
+}
+.eachuserstory  {
+    display:block;
+    /* border: 1px solid black; */
+    margin: 10px;
+    margin-top: 7px;
+    width: 70px;
+    
+}
+
+.eachuserstory h6 {
+    font-size: 12px;
+    line-height: 14px;
+    font-weight: 400;
+    text-align: center;
+    margin-top: 5px;
+}
+.eachuserstory .profilepic img{
+    width: 60px;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto;
+    border: 2px solid red;
+}
+.eachuserstory2  {
+    display:flex;
+    /* border: 1px solid black; */
+    /* margin: 10px; */
+    /* margin-top: 5px; */
+    width: 100%;
+    align-items: center;
+    
+}
+.name {
+    display: block;
+    /* border: 1px solid black; */
+    margin-left: 18px;
+    text-align: left;
+    margin-right: 10px;
+    width: 200px;
+ 
+}
+
+.name .userid {
+    margin-top: 15px;
+    font-size: 14px;
+    /* line-height: 14px; */
+    font-weight: 500;
+    text-align: left;
+    /* margin-top: 5px; */
+    color: var(--text);
+    /* border:1px solid rgb(134, 38, 38); */
+}
+
+.name .username {
+    font-size: 14px;
+    line-height: 10px;
+    /* font-weight:  */
+    font-weight: 400;
+    text-align: left;
+    /* margin-top: 5px; */
+    margin-bottom: 20px;
+    color: var(--thintext);
+    /* border:1px solid black; */
+}
+/* .eachuserstory2 h4 {
+    font-size: 16px;
+    line-height: 14px;
+    font-weight: 600;
+    text-align: left;
+    margin-top: 5px;
+} */
+.eachuserstory2 .profilepic img{
+    width: 60px;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto;
+    /* border: 2px solid red; */
+}
+.background .maindiv .profiledetails {
+    display: block;
+    width: 28%;
+    /* border: 0.5px solid var(--border); */
+    margin: 5px;
+    padding: 20px;
+    border-radius: 3px;
+    position: fixed;
+    top: 40;
+    -webkit-position:sticky;
+}
+
+.profiledetails .moredetails .switchbutton {
+    /* border: 1px solid green; */
+    width: 80%;
+    float: right;
+}
+
+.profiledetails .moredetails .switchbutton p {
+    margin-bottom:0px;
+    float: right;
+    font-weight: 600;
+    font-size: 12px;
+    color: var(--follow);
+  
+}
+.switchbutton p a {
+    text-decoration: none;
+    color: var(--follow);
+   
+}
+.suggest {
+    display: flex;
+    margin-top: 10px;
+    flex-direction: row;
+    /* border: 1px solid red; */
+    align-items: center;
+    padding-bottom: 5px;
+}
+.moredetails .sugeestion{
+    margin-top: 10px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 18px;
+    display: block;
+    width: 300px;
+    /* border:1px solid olive; */
+    color: var(--thintext);
+}
+.moredetails .sugeestion p {
+    margin-bottom: 0px; 
+}
+.moredetails .seeall{
+    margin-top: 10px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 18px;
+    display: block;
+    float: right;
+    /* border: 1px solid green; */
+    width: 80%;
+    color: var(--thintext);
+}
+.moredetails .seeall p{
+    margin-bottom:0px;
+    float: right;
+    text-align: right;
+    font-weight: 500;
+    font-size: 12px;
+    color: var(--text);
+
+}
+
+.moredetails .seeall p  a {
+    text-decoration: none;
+    color: var(--text);
+}
+/* Stories section */
+
+.profiledetails .usersugeest {
+    /* border: 2px solid green; */
+    display: block;
+    padding-left: 10px;
+    padding-top: 20px;
+
+}
+.user  {
+    display: flex;
+    /* border: 1px solid blue; */
+    width: 100%;
+    margin-bottom:3px;
+    
+}
+
+.profiledetails .usersugeest .user .userdp img {
+    width: 35px;
+    border-radius: 50%;
+    display: block;
+}
+.profiledetails {
+    clear: both;
+   
+}
+.user .nameandnew .username {
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 0px;
+    /* border: 1px solid blue; */
+}
+.user .followbtn{
+    /* border:1px solid red; */
+
+ cursor: pointer;
+    line-height: 18px;
+    display: block;
+    float: right;
+    /* border: 1px solid green; */
+    width: 100%;
+    line-height: 45px;
+
+}
+.user .followbtn p {
+
+    /* border:1px solid red; */
+    margin-bottom:0px;
+    float: right;
+    text-align: right;
+    font-weight: 500;
+    width: 100%;
+    font-size: 12px;
+    color: var(--follow);
+}
+.nameandnew {
+    display: inline-block;
+    max-height: 50px;
+    /* border: 1px solid orange; */
+    margin-left: 15px;
+    width: 300px;
+}
+
+.nameandnew .newtoinsta {
+    display: block;
+    font-size: 12px;
+    font-weight: 400;
+    color: var(--thintext);
+    /* border: 1px solid olivedrab; */
+}
+
+.profiledetails .footer {
+    /* border: 1px solid green; */
+    width:100%;
+}
+
+.profiledetails .footer .footernav {
+    list-style: none;
+    display: flex;
+  
+}
+
+.profiledetails .footer .footernav li {
+    display: block;
+}
+.profiledetails .footer .footernav li a {
+    text-decoration: none;
+    font-size: 11px;
+    padding: 2px;
+    color: var(--footer-text-color);
+}
+.footercopy {
+    color: var(--footer-text-color);
+    font-size: 11px;
+    text-transform: uppercase;
+    line-height: 15px;
+    /* border: 1px solid green; */
+    
+
+}
+.feedpost {
+    border: 1px solid blue;
+    width: 60%;
+    clear: both;
+    border-radius: 3px;
+    transform: translateX(5px);
+    border: 0.5px solid var(--border);
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    
+
+}
+.feedpost .userdetails {
+    display: flex;
+    padding: 20px;
+    width: 100%;
+    border-radius: 3px;
+    align-items: center;
+    background-color: #fff;
+}
+.feedpost .userdetails .userpostdp img {
+    width: 45px;
+    /* border: 1px solid dodgerblue; */
+    border-radius: 50%;
+}
+.idname {
+    margin-left: 15px;
+    width: 100%;
+}
+.idname h4{
+    /* border: 1px solid brown; */
+    font-size: 14px;
+    width: 100%;
+    margin-bottom: 0px;
+    color: vaR(--text);
+
+    /* line-height: 10px; */
+}
+.idname .username{
+    /* border: 1px solid brown; */
+    font-size: 14px;
+    width: 100%;
+    margin-bottom: 0px;
+    color: vaR(--text);
+
+    /* line-height: 10px; */
+}
+.feedpost .options  {
+    /* border: 1px solid red; */
+    
+    width: 100%;
+    float: right;
+ 
+
+
+}
+.feedpost .options p{
+    margin-bottom: 0px;
+    width: 100%;
+    float: right;
+    text-align: right;
+    /* border: 1px solid red; */
+    font-size: 25px;
+    color: var(--text);
+    font-weight: 600;
+    transform: translateY(-8px);
+}
+.idname .userlocation {
+    color: var(--thintext);
+}
+
+.feedpost .userimagepost {
+    width:100%;
+    max-height: 680px;
+    overflow: hidden;
+    /* border: 1px solid red; */
+}
+
+.feedpost .commentsection {
+    display: flex;
+    margin-bottom: 0px;
+    /* border: 1px solid blue; */
+    height: 40px;
+    line-height: 15px;
+    padding-left: 5px;
+    /* margin-left: 5px; */
+}
+
+.feedpost .commentsection ul {
+    display: flex;
+}
+
+.feedpost .commentsection ul li {
+    display: block;
+    padding: 10px;
+}
+
+.feedpost .commentsection ul li img{
+    width: 24px;
+    /* margin: ; */
+    /* padding: 10px; */
+}
+.feedpost .commentsection .saveforlater {
+    padding: 10px;
+    width: 100%;
+    /* border: 1px solid red; */
+
+}
+.feedpost .commentsection .saveforlater img {
+    width: 24px;
+    float: right;
+    margin-right: 10px;
+  
+}
+
+.feedpost .likedby{
+    padding: 5px;
+    /* border: 1px solid red; */
+    font-size: 14px;
+    margin-top: 0px;
+    /* margin-left: 5px; */
+    color: var(--text);
+    padding-left: 15px;
+    margin-bottom: 0px;
+}
+.feedpost .likedby p {
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+}
+
+
+.feedpost .username2 {
+    /* border: 1px solid sandybrown; */
+    padding-left: 15px;
+    font-size: 14px;
+    color: var(--text);
+    font-weight: 600;
+
+}
+
+.caption{
+    font-weight: 400;
+}
+#more{
+    color: var(--thintext);
+}
+
+.timestamp {
+    color: var(--thintext);
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 12px;
+    padding-left: 15px;
+}
