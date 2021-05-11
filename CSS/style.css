@@ -361,16 +361,18 @@ nav {
 .profiledetails .footer {
     /* border: 1px solid green; */
     width:100%;
+    margin-top: 30px;
 }
 
 .profiledetails .footer .footernav {
     list-style: none;
-    display: flex;
+    display: inline-block
   
 }
 
 .profiledetails .footer .footernav li {
-    display: block;
+    display: inline-block;
+    /* border: 1px solid green; */
 }
 .profiledetails .footer .footernav li a {
     text-decoration: none;
