@@ -127,7 +127,8 @@ nav {
     padding: 10px;
     overflow-x: hidden;
     background-color: #fff;
-    clear: both;    
+    clear: both;   
+    margin-bottom: 15px; 
    
 }
 .eachuserstory  {
@@ -393,8 +394,9 @@ nav {
     border-radius: 3px;
     transform: translateX(5px);
     border: 0.5px solid var(--border);
-    margin-bottom: 10px;
+    margin-bottom: 45px;
     padding-bottom: 10px;
+    background-color: #fff;
     
 
 }
@@ -402,9 +404,11 @@ nav {
     display: flex;
     padding: 20px;
     width: 100%;
-    border-radius: 3px;
+    border-radius: 3px 3px 0px 0px ;
     align-items: center;
     background-color: #fff;
+    border-bottom: 0.5px solid var(--border);
+
 }
 .feedpost .userdetails .userpostdp img {
     width: 45px;
@@ -471,6 +475,7 @@ nav {
     height: 40px;
     line-height: 15px;
     padding-left: 5px;
+   
     /* margin-left: 5px; */
 }
 
@@ -541,8 +546,27 @@ nav {
     padding-left: 15px;
 }
 
-/* @media only screen and (max-width: 800px) {
+@media only screen and (max-width: 800px) {
+    .maindiv {
+        display: block;
+    }
   aside {
       display: none;
   }
-} */
+  .feedpost {
+      width: 100%;
+  }
+  .stories {
+      width: 100%;
+  }
+}
+@media only screen and (max-width: 360px) {
+    .maindiv {
+        display: inline-block;
+    }
+  .feedpost {
+      width: 100%;
+      
+  }
+
+}
