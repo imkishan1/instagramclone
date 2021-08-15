@@ -125,11 +125,14 @@ nav {
     border-radius: 3px;
     margin: 5px;
     padding: 10px;
-    overflow-x: hidden;
+    overflow-x: auto;
     background-color: #fff;
     clear: both;   
     margin-bottom: 15px; 
    
+}
+.stories::-webkit-scrollbar{
+    display: none;
 }
 .eachuserstory  {
     display:block;
