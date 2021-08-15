@@ -150,12 +150,19 @@ nav {
     text-align: center;
     margin-top: 5px;
 }
-.eachuserstory .profilepic img{
-    width: 60px;
+.eachuserstory .profilepic {
+    width: 64px;
+    height: 64px;
     border-radius: 50%;
-    display: block;
-    margin: 0 auto;
-    border: 2px solid red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background:linear-gradient(to right , rgb(255, 60, 0),rgb(255, 115, 0)) !important;
+}
+.eachuserstory .profilepic img{
+    width: 60px !important;
+    height: 60px !important;
 }
 .eachuserstory2  {
     display:flex;
@@ -205,8 +212,10 @@ nav {
     text-align: left;
     margin-top: 5px;
 } */
-.eachuserstory2 .profilepic img{
+
+.profilepic img{
     width: 60px;
+    height: 60px;
     border-radius: 50%;
     display: block;
     margin: 0 auto;
